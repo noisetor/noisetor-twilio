@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Response>
+	<Pause length="10"/>
+
+	<Say>Please leave a message at the beep.</Say>
+
+	<Record action="voicemail.cgi"
+		maxLength="120"
+		transcribeCallback="voicemail.cgi"
+		/>
+
+	<Say>Sorry, I did not receive a recording.  Please try calling again later.</Say>
+	<Hangup/>
+</Response>
